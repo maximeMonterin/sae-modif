@@ -1,0 +1,44 @@
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body main.root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+root img.main-img {
+    width: 100%;
+    height: auto;
+}
+
+body div.phone-landscape {
+    display: none;
+}
+
+body div.video-content {
+    display: none;
+}
+
+@media only screen and (max-device-width: 800px) and (orientation:portrait) {
+    body div.phone-landscape{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body main.root {
+        display: none;
+    }
+}

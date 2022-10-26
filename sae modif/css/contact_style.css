@@ -1,0 +1,66 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background-color: rgba(71,92,123,255);*/
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*overflow-y: hidden;*/
+
+    /*Couleur des textes*/
+    color: rgb(144, 238, 144);
+}
+
+#contact {
+    width: 30%;
+    background-color: rgb(43, 66, 43);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.left-container {
+    margin-left: 50px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: right;
+    margin-right: 100px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    height: 250px;
+}
+
+
+
+.play-button {
+    width: 300px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #5AC05A;
+    border-radius: 5px;
+}
+
+.play-button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*TODO mediaquery pour les tel en mettant chaque bloc l'un en dessous de l'autre*/

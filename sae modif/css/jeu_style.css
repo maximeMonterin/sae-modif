@@ -1,0 +1,271 @@
+html, body, .root {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body main.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    filter: blur(10px);
+}
+
+.root div.main-container {
+    height: 98%;
+    width: 98%;
+    background-color: #f1f1f1;
+    border: .4vh solid #f1f1f1;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main-container div.title-bar {
+    width: 100%;
+    height: 6%;
+    background-color: #f1f1f1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar div.top {
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top div.dot-container {
+    margin-left: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot-container .dot {
+    margin: 0 2px;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+#dot1 {
+    cursor: pointer;
+    background-color: #ED594A;
+}
+
+#dot2 {
+    background-color: #FDD800;
+}
+
+#dot3 {
+    background-color: #5AC05A;
+}
+
+.top input.search-bar {
+    height: 50%;
+    width: 70%;
+
+    padding: 5px;
+
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    color: #666;
+
+    text-align: center;
+}
+
+.top div.icons-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 6%;
+    height: 90%;
+}
+
+.icons-container button.icons-btn {
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 1px #666;
+    height: 100%;
+}
+
+.icons-btn img.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.title-bar div.bottom-pages {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.bottom-pages a.page {
+    cursor: pointer;
+
+    width: 15%;
+    height: 80%;
+    margin-left: .2em;
+    padding: 2px;
+
+    background: white;
+    border: 1px solid #c0c0c0;
+    transform: skewX(-10deg);
+    color: #666;
+}
+
+.bottom-pages a#page-selected {
+    background-color: #d8d8d8;
+    color: #303030;
+}
+
+.bottom-pages a#last-page {
+    width: 2%;
+    height: 80%;
+}
+
+.main-container div.contents {
+    width: 100%;
+    height: 98%;
+}
+
+body div.phone-landscape {
+    display: none;
+}
+
+p.landscape-text {
+    font-size: 50px;
+}
+
+body div.popup-container {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 50%;
+}
+
+.popup-container div.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+
+    border-radius: .625rem;
+    box-shadow: 0 0 10px 0 #555555;
+
+    width: 20%;
+}
+
+.popup a.button-popup-choose {
+    cursor: pointer;
+    background: #999999;
+    border: 0;
+    color: white;
+    border-radius: 1.4em;
+    font: 0.8rem 'Work Sans', sans-serif;
+    padding: .6em;
+    margin: 0.7em;
+    width: 80%;
+    height: fit-content;
+}
+
+.popup img.child-logo {
+    width: 20%;
+    margin-top: 4px;
+}
+
+.popup p.username-text {
+    width: 70%;
+    color: #555555;
+    font: 600 1.2em 'Work Sans', sans-serif, sans-serif;
+}
+
+.popup input.username-input {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #555555;
+    width: 80%;
+    font: 500 1rem 'Work Sans', sans-serif, sans-serif;
+    height: 2.15em;
+}
+
+.popup input.username-input:focus {
+    outline: none
+}
+
+.popup button.username-button {
+    cursor: pointer;
+    background: #555555;
+    border: 0;
+    border-radius: 1.4em;
+    color: white;
+    font: 1.1rem 'Work Sans', sans-serif;
+    margin: 1.5em auto 1em;
+    padding: .6em;
+    width: 80%;
+}
+
+/* Portrait phone */
+@media only screen and (max-device-width: 800px) and (orientation:portrait) {
+    body div.phone-landscape{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body main.root {
+        display: none;
+    }
+
+    body div.popup-container {
+        display: none;
+    }
+}
+
+/* Landscape phone */
+@media only screen and (max-device-width: 800px) and (orientation:landscape){
+    body {
+        background-color: red;
+    }
+
+    .popup img.child-logo {
+        display: none;
+    }
+
+}

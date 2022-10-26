@@ -1,0 +1,13 @@
+            <section class="presentation-content">
+                <h2>Un jeu tout d'abord éducatif</h2>
+                <img src="../assets/icons8-partage-de-connaissances-100.png" alt="education">
+                <p>Même si DataPlayground est un jeu, c'est avant tout un   <a href="https://fr.wikipedia.org/wiki/Jeu_sérieux">Serious Game</a>. Cela signifie qu'il a un but éducatif, il sert à apprendre quelque chose.
+                    En l'occurence, DataPlayground sert a sensibiliser les jeunes enfants qui pourraient avoir accès à internet à savoir utiliser internet correctement et sans danger.
+                    En effet, mal utilisé, internet peut se reveler dangereux.</p>
+            </section>
+
+            <section class="presentation-content">
+                <h2>Sensibilisation à la collecte de données</h2>
+                <img src="../assets/icons8-big-data-100.png" alt="education">
+                <p>Ce Serious Game ne s'adresse pas uniquement aux enfants, les adultes ne sont pas tous au courant de la <a href="https://mbamci.com/donnees-personnelles-ce-quil-faut-savoir/"> collecte de données</a> de laquelle ils sont victimes parfois sans le savoir.</p>
+            </section>
